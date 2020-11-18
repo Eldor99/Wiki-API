@@ -87,6 +87,8 @@ app.route('/articles/:articleTitle')
 		(err) => {
 			if(!err){
 				res.send('Successfuly updated article.');
+			}else{
+				res.send(err);
 			}
 		}
 	)
