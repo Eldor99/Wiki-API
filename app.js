@@ -66,13 +66,6 @@ app.route('/articles')
 });
 
 
-
-app.get('/articles');
-
-app.post('/articles');
-
-app.delete('/articles');
-
 /////////////////////////////////////////////// Request Targeting Spesefic targeting ///////////////////////////////////
 
 app.route('/articles/:articleTitle')
@@ -118,7 +111,7 @@ app.route('/articles/:articleTitle')
 		}else{
 			res.send(err);
 		}
-	}
+	});
 });
 
 app.listen(3000, () => {
